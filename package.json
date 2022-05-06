@@ -1,0 +1,23 @@
+{
+  "name": "self-signed-client",
+  "version": "0.0.1",
+  "description": "Demo authentication via client certificates",
+  "author": "The Mark <oi@themark.dev>",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "server": "node ./server/server.js",
+    "valid-client": "node ./client/valid-app.js",
+    "invalid-client": "node ./client/invalid-app.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "node-forge": "^1.3.1",
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/node-forge": "^1.0.2",
+    "dotenv": "^8.2.0"
+  }
+}
